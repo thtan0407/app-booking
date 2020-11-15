@@ -1,0 +1,52 @@
+.footer {
+	@include backgroundGradient;
+	
+	._item {
+		text-align: center;
+		
+		> a {
+			@include xy-position-inline(center, center);
+			flex-direction: column;
+			padding: 10px 5px 5px;
+			
+			> .--icon {
+				width: 30px;
+				height: 30px;
+				border-radius: 100%;
+				font-size: .95em;
+				color: $color-main;
+				background: #fff;
+				@include b-shadow(0 0 1px rgba(0, 0, 0, .2));
+				@include xy-position(center, center);
+			}
+			
+			> .--text {
+				margin-top: .4em;
+				font-size: .85em;
+				color: #fff;
+				font-weight: 500;
+			}
+		}
+		
+		&:not(.active) {
+			> a {
+				opacity: .7;
+			}
+		}
+		&:hover {
+			a {
+				opacity: 1;
+			}
+		}
+	}
+	
+	&.-fixed {
+		position: fixed !important;
+		bottom: 0;
+		left: 50%;
+		max-width: 540px;
+		width: 100%;
+		@include transform(translateX(-50%));
+		z-index: 99999 !important;
+	}
+}

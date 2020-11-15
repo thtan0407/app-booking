@@ -1,0 +1,93 @@
+#modalNoted {
+	font-size: 16px;
+	
+	.modal-content {
+		.modal-header {
+			@include flex-direction;
+			padding: 0;
+			
+			&-top {
+				position: relative;
+				width: 100%;
+				padding: 10px 5px 10px 15px;
+				@include xy-position(center, space-between);
+				
+				.modal-title {
+					@include xy-position(center, flex-start);
+					
+					img {
+						width: 70px;
+					}
+				}
+				
+				.close {
+					padding: 0;
+					margin: 0;
+					//position: absolute;
+					//top: 5px;
+					//right: 5px;
+					//height: 25px;
+					//width: 25px;
+					opacity: 1;
+					border-radius: 100%;
+					color: $color-dark;
+					font-size: 1em;
+					@include xy-position(center, center);
+					//background: $color-light;
+					outline: none !important;
+					//border: 1px solid #b9b9b9;
+				}
+			}
+			
+			&-bottom {
+				width: 100%;
+				color: #fff;
+				padding: 30px 15px;
+				@include backgroundGradient;
+				@include xy-position(center, center);
+				position: relative;
+				font-size: 1.3em;
+				line-height: 1.5;
+				font-weight: 500;
+				overflow: hidden;
+				
+				._decor {
+					font-size: 4em;
+					color: #fff;
+					opacity: .1;
+					position: absolute;
+					top: 65%;
+					left: 50%;
+					@include transform(translate(-50%, -50%));
+					z-index: 1;
+				}
+				
+				> span {
+					position: relative;
+					z-index: 2;
+				}
+			}
+		}
+		
+		.modal-body {
+			._inner {
+				.form-group {
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+					
+					textarea {
+						border-radius: .25rem;
+						background: #f8f8f8;
+						color: $color-dark;
+					}
+					
+					._btn {
+						max-width: 50%;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+}

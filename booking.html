@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#f5f5f5">
+    <meta name="theme-color" content="#f5f5f5">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/swiper/swiper.min.css">
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="assets/plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="assets/scss/style.css">
+
+</head>
+<body>
+<div id="preloader">
+    <div class="preloader">
+        <span class="light"></span>
+        <span></span>
+        <span></span>
+        <span class="light"></span>
+    </div>
+</div>
+<div id="main">
+    <div class="decor">
+        <div class="decor_1" style="background-image: url('./assets/images/decor.png')"></div>
+        <div class="decor_2" style="background-image: url('./assets/images/bg-header.png')"></div>
+    </div>
+    <div id="_inner">
+        <div id="header">
+            <div class="container container-10">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="_logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div id="humburger" class="_humburger">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="navigation" class="_navigation">
+                <a href="javascript:void(0)" id="closeNavigation">
+                    <i class="fal fa-times"></i>
+                </a>
+                <ul class="list-unstyled mb-0">
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- Thay đổi nội dung trong này -->
+            <div class="__inner">
+                <div id="booking">
+                    <div class="container container-10">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="_heading">
+                                    Booking
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_main-booking">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="">
+                                    Location:
+                                </label>
+                                <select name="" id="slt-store" class="form-control">
+                                    <option value="0">---</option>
+                                    <option value="1">Bnails Amarillo - 5901 S Coulter St #200, Amarillo, TX 79119
+                                    </option>
+                                    <option value="2">Bnails Hereford - 519 N 25 Mile Ave, Hereford, TX 79045</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">
+                                    Appointment date:
+                                </label>
+                                <div id="days">
+                                    <div class="days-slide dragscroll dragscroll-x">
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-day-top">
+                                                    Sat
+                                                </div>
+                                                <div class="item-day-bottom">
+                                                    24
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item active">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-day-top">
+                                                    Sun
+                                                </div>
+                                                <div class="item-day-bottom">
+                                                    25
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-day-top">
+                                                    Mon
+                                                </div>
+                                                <div class="item-day-bottom">
+                                                    26
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-day-top">
+                                                    Tue
+                                                </div>
+                                                <div class="item-day-bottom">
+                                                    27
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-day-top">
+                                                    Wed
+                                                </div>
+                                                <div class="item-day-bottom">
+                                                    28
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-day-top">
+                                                    Thu
+                                                </div>
+                                                <div class="item-day-bottom">
+                                                    29
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-day-top">
+                                                    Fri
+                                                </div>
+                                                <div class="item-day-bottom">
+                                                    30
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-day-top">
+                                                    Sat
+                                                </div>
+                                                <div class="item-day-bottom">
+                                                    01
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-day-top">
+                                                    Sun
+                                                </div>
+                                                <div class="item-day-bottom">
+                                                    02
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-day-top">
+                                                    Mon
+                                                </div>
+                                                <div class="item-day-bottom">
+                                                    03
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-day-top">
+                                                    Tue
+                                                </div>
+                                                <div class="item-day-bottom">
+                                                    04
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-day-top">
+                                                    Wed
+                                                </div>
+                                                <div class="item-day-bottom">
+                                                    05
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-day-top">
+                                                    Thu
+                                                </div>
+                                                <div class="item-day-bottom">
+                                                    06
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-day-top">
+                                                    Fri
+                                                </div>
+                                                <div class="item-day-bottom">
+                                                    07
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">
+                                    Technician:
+                                </label>
+                                <select name="" id="slt-store" class="form-control">
+                                    <option value="0">---</option>
+                                    <option value="1">Bnails Amarillo - 5901 S Coulter St #200, Amarillo, TX 79119
+                                    </option>
+                                    <option value="2">Bnails Hereford - 519 N 25 Mile Ave, Hereford, TX 79045</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">
+                                    Service:
+                                </label>
+                                <select name="" id="slt-store" class="form-control">
+                                    <option value="0">---</option>
+                                    <option value="1">Bnails Amarillo - 5901 S Coulter St #200, Amarillo, TX 79119
+                                    </option>
+                                    <option value="2">Bnails Hereford - 519 N 25 Mile Ave, Hereford, TX 79045</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">
+                                    Appointment time:
+                                </label>
+                                <div id="times">
+                                    <div class="times-slide dragscroll dragscroll-x">
+                                        <div class="item active">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-times">
+                                                    09:00 A.M
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-times">
+                                                    10:00 A.M
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-times">
+                                                    11:00 A.M
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-times">
+                                                    12:00 A.M
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-times">
+                                                    01:00 P.M
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-times">
+                                                    02:00 A.M
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-times">
+                                                    03:00 A.M
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-times">
+                                                    04:00 A.M
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-times">
+                                                    05:00 A.M
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0)">
+                                                <div class="item-times">
+                                                    06:00 A.M
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group text-center mt-5">
+                                <button type="button" class="_btn _btn-add">
+                                    Add service <span><i class="fal fa-plus"></i></span>
+                                </button>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Your service:</label>
+                                <div id="listService" class="scroll-y">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <div class="__inner">
+                                                <div class="main">
+                                                    <div class="_main-left">
+                                                        <div class="-image"
+                                                             style="background-image: url('./assets/images/product.jpg')"></div>
+                                                    </div>
+                                                    <div class="_main-right">
+                                                        <div class="_content">
+                                                            <div class="_content-title">
+                                                                Pedi - Deluxe
+                                                            </div>
+                                                            <div class="_content-desc">
+                                                                You have an appointment on 15-11-2020 02:15 PM
+                                                            </div>
+                                                        </div>
+                                                        <div class="_icon">
+                                                            <a href="javascript:void(0)">
+                                                                <i class="fas fa-times"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="__inner">
+                                                <div class="main">
+                                                    <div class="_main-left">
+                                                        <div class="-image"
+                                                             style="background-image: url('./assets/images/product.jpg')"></div>
+                                                    </div>
+                                                    <div class="_main-right">
+                                                        <div class="_content">
+                                                            <div class="_content-title">
+                                                                Pedi - Deluxe
+                                                            </div>
+                                                            <div class="_content-desc">
+                                                                You have an appointment on 15-11-2020 02:15 PM
+                                                            </div>
+                                                        </div>
+                                                        <div class="_icon">
+                                                            <a href="javascript:void(0)">
+                                                                <i class="fas fa-times"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="__inner">
+                                                <div class="main">
+                                                    <div class="_main-left">
+                                                        <div class="-image"
+                                                             style="background-image: url('./assets/images/product.jpg')"></div>
+                                                    </div>
+                                                    <div class="_main-right">
+                                                        <div class="_content">
+                                                            <div class="_content-title">
+                                                                Pedi - Deluxe
+                                                            </div>
+                                                            <div class="_content-desc">
+                                                                You have an appointment on 15-11-2020 02:15 PM
+                                                            </div>
+                                                        </div>
+                                                        <div class="_icon">
+                                                            <a href="javascript:void(0)">
+                                                                <i class="fas fa-times"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="__inner">
+                                                <div class="main">
+                                                    <div class="_main-left">
+                                                        <div class="-image"
+                                                             style="background-image: url('./assets/images/product.jpg')"></div>
+                                                    </div>
+                                                    <div class="_main-right">
+                                                        <div class="_content">
+                                                            <div class="_content-title">
+                                                                Pedi - Deluxe
+                                                            </div>
+                                                            <div class="_content-desc">
+                                                                You have an appointment on 15-11-2020 02:15 PM
+                                                            </div>
+                                                        </div>
+                                                        <div class="_icon">
+                                                            <a href="javascript:void(0)">
+                                                                <i class="fas fa-times"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="__inner">
+                                                <div class="main">
+                                                    <div class="_main-left">
+                                                        <div class="-image"
+                                                             style="background-image: url('./assets/images/product.jpg')"></div>
+                                                    </div>
+                                                    <div class="_main-right">
+                                                        <div class="_content">
+                                                            <div class="_content-title">
+                                                                Pedi - Deluxe
+                                                            </div>
+                                                            <div class="_content-desc">
+                                                                You have an appointment on 15-11-2020 02:15 PM
+                                                            </div>
+                                                        </div>
+                                                        <div class="_icon">
+                                                            <a href="javascript:void(0)">
+                                                                <i class="fas fa-times"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">
+                                    Noted:
+                                </label>
+                                <textarea name="" id="" class="form-control" rows="4"></textarea>
+                            </div>
+                            <div class="form-group text-center mt-5">
+                                <button type="button" class="_btn _btn-main">
+                                    Add service <span><i class="fal fa-calendar-alt"></i></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer -fixed">
+        <div class="container container-10">
+            <div class="row">
+                <div class="col-4">
+                    <div class="_item">
+                        <a href="todolist.html">
+                            <div class="--icon">
+                                <i class="fal fa-ballot-check"></i>
+                            </div>
+                            <div class="--text">
+                                Todo List
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="_item active">
+                        <a href="index.html">
+                            <div class="--icon">
+                                <i class="fal fa-home-lg-alt"></i>
+                            </div>
+                            <div class="--text">
+                                Home
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="_item">
+                        <a href="user-info.html">
+                            <div class="--icon">
+                                <i class="fal fa-user-alt"></i>
+                            </div>
+                            <div class="--text">
+                                Account
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalNoted" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header-top">
+                    <h5 class="modal-title">
+                        <img src="assets/images/logo.png" alt="">
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fal fa-sign-out-alt"></i>
+                    </button>
+                </div>
+                <div class="modal-header-bottom">
+                    <span>Create Note</span>
+                    <div class="_decor">
+                        <i class="fal fa-edit"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="_inner">
+                    <form action="">
+                        <div class="form-group">
+                            <textarea name="" id="" class="form-control" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="_btn _btn-main">
+                                Save noted <span><i class="fas fa-save"></i></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="assets/plugins/swiper/swiper.min.js"></script>
+<script type="text/javascript" src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/plugins/dragscroll.js"></script>
+<script type="text/javascript" src="assets/js/script-theme.js"></script>
+</body>
+</html>
